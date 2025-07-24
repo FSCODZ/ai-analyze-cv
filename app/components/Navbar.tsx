@@ -18,7 +18,7 @@ const Navbar = ({ showOptions = true, showUploadButton = true }: NavbarProps) =>
         </Link>
       )}
         {showOptions && (
-        <Link to="/upload" className="primary-button w-fit">
+        <Link to="/howitworks" className="primary-button w-fit">
           How it works
         </Link>
       )}
