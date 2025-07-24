@@ -1,10 +1,12 @@
 import { Link } from "react-router";
 
 type NavbarProps = {
-  showUploadButton?: boolean;
+  showOptions?: boolean;
+  showUploadButton?:boolean;
+
 };
 
-const Navbar = ({ showUploadButton = true }: NavbarProps) => {
+const Navbar = ({ showOptions = true, showUploadButton = true }: NavbarProps) => {
   return (
     <nav className="navbar">
       <Link to="/">
@@ -15,6 +17,12 @@ const Navbar = ({ showUploadButton = true }: NavbarProps) => {
           Upload Resume
         </Link>
       )}
+        {showOptions && (
+        <Link to="/upload" className="primary-button w-fit">
+          How it works
+        </Link>
+      )}
+      
     </nav>
   );
 };

@@ -11,7 +11,7 @@ export function meta() {
 export default function Index() {
   return (
     <>
-      <Navbar showUploadButton={false} />
+      <Navbar showUploadButton={false} showOptions={true} />
       <main className="bg-white min-h-screen flex flex-col items-center justify-center text-center p-8">
         <h1 className="text-2xl font-bold mb-4">Welcome to Resumind</h1>
         <h2>Where you can easy upload your resume and get feedback from an AI in seconds</h2>

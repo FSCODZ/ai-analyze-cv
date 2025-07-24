@@ -40,7 +40,7 @@ export default function Home() {
   }, []);
 
   return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
-    <Navbar />
+<Navbar showUploadButton={true} showOptions={true} />
 
     <section className="main-section">
       <div className="page-heading py-16">
