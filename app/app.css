@@ -16,6 +16,14 @@
   --color-badge-green-text: #254d4a;
   --color-badge-red-text: #752522;
   --color-badge-yellow-text: #73321b;
+
+  /* AI Landing Page Colors */
+  --color-primary: #3B82F6;
+  --color-primary-light: #60A5FA;
+  --color-primary-dark: #1D4ED8;
+  --color-secondary: #F1F5F9;
+  --color-accent: #8B5CF6;
+  --color-muted: #64748B;
 }
 
 html,
@@ -27,7 +35,7 @@ main {
   @apply min-h-screen pt-10;
 }
 h1 {
-  @apply text-6xl  text-gradient leading-tight tracking-[-2px] font-semibold;
+  @apply text-6xl text-gradient leading-tight tracking-[-2px] font-semibold;
 }
 
 h2 {
@@ -53,35 +61,52 @@ form {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
   }
+  
+  .hero-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6];
+  }
+  
   .gradient-border {
     @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200 p-4 rounded-2xl;
   }
+  
   .primary-button {
     @apply primary-gradient text-white rounded-full px-4 py-2 cursor-pointer w-full;
   }
+  
+  .hero-button {
+    @apply hero-gradient-bg text-white rounded-full px-8 py-4 cursor-pointer font-semibold hover:scale-105 transition-transform duration-300;
+  }
+  
   .resume-nav {
     @apply flex flex-row justify-between items-center p-4 border-b border-gray-200;
   }
+  
   .resume-summary {
     @apply flex flex-row items-center justify-center p-4 gap-4;
     .category {
       @apply flex flex-row gap-2 items-center bg-gray-50 rounded-2xl p-4 w-full justify-between;
     }
   }
+  
   .back-button {
     @apply flex flex-row items-center gap-2 border border-gray-200 rounded-lg p-2 shadow-sm;
   }
+  
   .auth-button {
     @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
   }
+  
   .main-section {
     @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
   }
+  
   .page-heading {
     @apply flex flex-col items-center gap-8 max-w-4xl text-center;
   }
+  
   .resumes-section {
-    @apply flex flex-wrap max-lg:flex-col gap-6 items-start  w-full max-w-[1850px] justify-evenly;
+    @apply flex flex-wrap max-lg:flex-col gap-6 items-start w-full max-w-[1850px] justify-evenly;
   }
 
   .resume-card {
@@ -111,8 +136,26 @@ form {
   .uplader-drag-area {
     @apply relative p-8 text-center transition-all duration-700 cursor-pointer bg-white rounded-2xl min-h-[208px];
   }
+  
   .uploader-selected-file {
     @apply flex items-center justify-between p-3 bg-gray-50 rounded-2xl;
+  }
+
+  /* Landing Page Specific Components */
+  .feature-card {
+    @apply bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100;
+  }
+
+  .step-card {
+    @apply bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100;
+  }
+
+  .step-icon {
+    @apply w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white shadow-lg;
+  }
+
+  .stats-card {
+    @apply text-center p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-gray-100;
   }
 }
 
@@ -122,6 +165,11 @@ form {
 
 @utility text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
+}
+
+@utility hero-gradient-bg {
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
 }
 
 @utility gradient-hover {
@@ -142,11 +190,39 @@ form {
   backdrop-filter: blur(10px);
 }
 
+@utility elegant-shadow {
+  box-shadow: 0 10px 40px -10px rgba(59, 130, 246, 0.2);
+}
+
+@utility glow-shadow {
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.3);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
