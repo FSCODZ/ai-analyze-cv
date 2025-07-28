@@ -1,4 +1,7 @@
 import { Link } from "react-router";
+import Features from "~/components/Features";
+import Footer from "~/components/Footer";
+import HowItWorks from "~/components/HowItWorks";
 import Navbar from "~/components/Navbar";
 
 export function meta() {
@@ -22,8 +25,12 @@ export default function Index() {
           to="/auth?next=/home"
           className="primary-button text-xl px-6 py-3 rounded"
         >
+        
           Fortsätt till inloggning
         </Link>
+        <HowItWorks/>
+          <Features/>
+          <Footer/>
       </main>
     </>
   );

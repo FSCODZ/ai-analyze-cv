@@ -29,10 +29,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slide-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            How It{" "}
-            <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Works
-            </span>
+            How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Get professional resume analysis in three simple steps. No signup required, instant results guaranteed.
