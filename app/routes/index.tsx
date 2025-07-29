@@ -10,7 +10,7 @@ import Navbar from "~/components/Navbar";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navbar/>
+      <Navbar showUploadButton = {false} />
       <section className="relative min-h-screen flex items-center bg-gradient overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
         <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
