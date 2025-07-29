@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           
-          {/* Brand Section */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
@@ -26,7 +25,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <div className="space-y-2">
@@ -65,14 +63,11 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-sm text-muted-foreground">
             © 2024 AI CV Analyzer. All rights reserved.
           </div>
-          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            Made with <Heart className="w-4 h-4 text-red-500" /> for job seekers worldwide
-          </div>
+         
         </div>
       </div>
     </footer>
