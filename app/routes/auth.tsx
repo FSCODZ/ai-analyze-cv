@@ -22,23 +22,23 @@ const Auth = () => {
             <div className="gradient-border shadow-lg">
                 <section className="flex flex-col gap-8 bg-white rounded-2xl p-10">
                     <div className="flex flex-col items-center gap-2 text-center">
-                        <h1>Välkommen till CV feed</h1>
-                        <h2>Logga in för att påbörja din karriär</h2>
+                        <h1>Welcome to AI analyzeFeed</h1>
+                        <h2> Log In to start your career</h2>
                     </div>
                     <div>
                         {isLoading ? (
                             <button className="auth-button animate-pulse">
-                                <p>Loggar in dig...</p>
+                                <p>Login In...</p>
                             </button>
                         ) : (
                             <>
                                 {auth.isAuthenticated ? (
                                     <button className="auth-button" onClick={auth.signOut}>
-                                        <p>Logga ut</p>
+                                        <p>Log Out</p>
                                     </button>
                                 ) : (
                                     <button className="auth-button" onClick={auth.signIn}>
-                                        <p>Logga in</p>
+                                        <p>Log In</p>
                                     </button>
                                 )}
                             </>
