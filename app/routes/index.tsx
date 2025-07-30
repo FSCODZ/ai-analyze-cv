@@ -29,7 +29,7 @@ const Index = () => {
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                   Welcome to{" "}
                   <span className="hero-gradient">
-                    Resumind
+                    CVision
                   </span>
                 </h1>
                 
@@ -72,7 +72,7 @@ const Index = () => {
               <div className="relative">
                 <img 
                   src={heroAi} 
-                  alt="AI CV Analysis Visualization" 
+                  alt="CVision" 
                   className="w-(80%) h-auto rounded-2xl shadow-elegant hover:shadow-glow transition-smooth"
                 />
              

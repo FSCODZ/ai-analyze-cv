@@ -10,15 +10,14 @@ const Footer = () => {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
-              <span className="text-xl font-bold">AI CV Analyzer</span>
+              <span className="text-xl font-bold">CVision</span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Transform your career with AI-powered resume analysis. Get instant ATS scores, 
               personalized feedback, and optimization recommendations.
             </p>
             <div className="flex gap-3">
-              <Button variant="outline" size="icon">
-              </Button>
+             
               <Button variant="outline" size="icon">
                 <Mail className="w-4 h-4" />
               </Button>
@@ -65,7 +64,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-sm text-muted-foreground">
-            © 2024 AI CV Analyzer. All rights reserved.
+            © 2025 CVision. All rights reserved.
           </div>
          
         </div>
