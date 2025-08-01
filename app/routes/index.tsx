@@ -1,4 +1,3 @@
-// app/routes/index.tsx
 import { usePuterStore } from "~/lib/puter";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
